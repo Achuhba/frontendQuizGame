@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Quiz Game</title>
+  </head>
+  <body>
+    
+    
+      <nav class="nav_bar">
+        <button class="help_btn" data-help-btn>?</button>
+        <!-- <div class="score"> -->
+        <p class="highScore">Ваш рекорд: 0 баллов</p>
+        <p class="youScore">Ваш счет: 0 баллов</p>
+        <!-- </div> -->
+      </nav>
+      <hr />
+      <div class="wrap">
+      <div class="quizWrapper">
+        <p class="question" data-question></p>
+        <div class="answer">
+          <div>
+            <input type="radio" name="radio" id="1" class="answer_radio" />
+            <label for="1" class="answer_label"></label>
+          </div>
+          <div>
+            <input type="radio" name="radio" id="2" class="answer_radio" />
+            <label for="2" class="answer_label"></label>
+          </div>
+          <div>
+            <input type="radio" name="radio" id="3" class="answer_radio" />
+            <label for="3" class="answer_label"></label>
+          </div>
+          <div>
+            <input type="radio" name="radio" id="4" class="answer_radio" />
+            <label for="4" class="answer_label"></label>
+          </div>
+        </div>
+        <button class="submitBtn" data-submit-question>Ответить</button>
+      </div>
+    </div>
+    <div class="modal_wrapper">
+      <p>
+        <b> Frontend Quiz </b>: Проверь свои силы! ⚡ Готов бросить вызов себе в
+        JavaScript, React, CSS и HTML? Каждый верный ответ — это +10 баллов к
+        твоему фронтенд-рейтингу. Узнай, настоящий ли ты мастер интерфейсов!»
+      </p>
+      <button class="close_modal">Закрыть</button>
+    </div>
+  </body>
+</html>
